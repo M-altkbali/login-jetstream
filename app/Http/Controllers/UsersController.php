@@ -67,6 +67,7 @@ class UsersController extends Controller
         // $user->username = strip_tags($request->input('user_username'));
         $user->email = strip_tags($request->input('user_email'));
         $user->password = strip_tags($request->input('user_pass'));
+       
         // $user->permission = strip_tags($request->input('user_per'));
         // $user->pic = strip_tags($request->input('user_pic'));
 
@@ -103,18 +104,19 @@ class UsersController extends Controller
 
         $request->validate([
             'user_fullname' => 'required',
-            'user_username' => 'required',
+            // 'user_username' => 'required',
             'user_pass' => 'required',
 
         ]);
 
         $to_update = User::findOrFail($id);
         $to_update->name = strip_tags($request->input('user_fullname'));
-        $to_update->username = strip_tags($request->input('user_username'));
+        // $to_update->username = strip_tags($request->input('user_username'));
         $to_update->email = strip_tags($request->input('user_email'));
         $to_update->password = strip_tags($request->input('user_pass'));
-        $to_update->permission = strip_tags($request->input('user_per'));
-        $to_update->pic = strip_tags($request->input('user_pic'));
+        // $to_update->permission = strip_tags($request->input('user_per'));
+        $to_update->activation = strip_tags($request->input('activation'));
+        // $to_update->pic = strip_tags($request->input('user_pic'));
 
         $to_update->save();
         return redirect()->route('users.show', $id);

@@ -36,6 +36,18 @@
 
             </select>
         </div>
+        <div>
+            <label for="act">Activation</label>
+            <select id="act" name="activation" value="{{ $user->activation }}">
+                @if ($user->activation == '0')
+                    <option value="0" selected>Not Active</option>
+                    <option value="1">Active</option>
+                @else
+                    <option value="0">Not Active</option>
+                    <option value="1" selected>Active</option>
+                @endif
+            </select>
+        </div>
         <div class="email">
             <label for="email">Email</label>
             <input id="email" name="user_email" value="{{ $user->email }}" type="email">
@@ -70,6 +82,7 @@
                 <button type="button">Cancel</button>
             </div>
         </div>
+        
 
 
     </form>
