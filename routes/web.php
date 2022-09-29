@@ -1,7 +1,10 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\StaticController;
+use App\Http\Controllers\UsersController;
 
+/*
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,9 +16,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [StaticController::class, 'index'])->name('home.index');
+
+// Route::get('/users', [StaticController::class, 'users'])->name('home.users');
+
+Route::resource('users', UsersController::class);
 
 Route::middleware([
     'auth:sanctum',

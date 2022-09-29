@@ -1,0 +1,103 @@
+//***** varibales *****//
+
+$dark-gray: #11101d;
+$light-gray: #1d1b31;
+$color_primary: #7380ec;
+$color_second: #565ea3;
+$color_success: #41f1b6;
+$color_danger: #ff7782;
+$color_warning: #ffbb55;
+$color_info_dark: #7d8da1;
+$color_info_light: #dce1eb;
+$color_white: #ffffff;
+$color_dark: #363949;
+$color_light: rgba(132, 139, 200, 0.18);
+$color_primary_variant: #111e88;
+$color_dark_variant: #677483;
+$color_background: #f6f6f9;
+
+$box_shadow: 0 2rem 3rem $color_light;
+
+//***** gloabal *****//
+* {
+    margin: 0px;
+    padding: 0px;
+    outline: 0;
+    appearance: none;
+    border: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    transition: 0.3s;
+}
+
+body {
+    background-color: $color_background;
+}
+
+a {
+    color: $color_white;
+}
+img {
+    display: block;
+    width: 100%;
+}
+h1 {
+    font-weight: 800;
+    font-size: 1.8rem;
+}
+h2 {
+    font-size: 1.4rem;
+}
+h3 {
+    font-size: 0.87rem;
+}
+h4 {
+    font-size: 0.8rem;
+}
+h5 {
+    font-size: 0.77rem;
+}
+small {
+    font-size: 0.75rem;
+}
+p {
+    color: $color_dark_variant;
+}
+b {
+    color: $color_dark;
+}
+
+.primary {
+    color: $color_primary;
+}
+.second {
+    color: $color_second;
+}
+.success {
+    color: $color_success;
+}
+.danger {
+    color: $color_danger;
+}
+.warning {
+    color: $color_warning;
+}
+
+.error {
+    color: $color_danger;
+}
+.profile-photo {
+    width: 2.8rem;
+    height: 2.8rem;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.text-muted {
+    color: $color_info_dark;
+}
+a,
+button,
+input[type="file"] {
+    cursor: pointer;
+}
