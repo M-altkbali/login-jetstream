@@ -12,18 +12,18 @@
                 <label>Full Name</label>
                 <span>{{ $user['name'] }}</span>
             </div>
-            <div>
+            {{-- <div>
                 <label>UserName</label>
                 <span>{{ $user['username'] }}</span>
-            </div>
+            </div> --}}
             <div>
                 <label>Email</label>
                 <span>{{ $user['email'] }}</span>
             </div>
-            <div>
+            {{-- <div>
                 <label>Phone Number</label>
                 <span>000-0000000</span>
-            </div>
+            </div> --}}
             <div>
                 <label>Password</label>
                 <span>{{ $user['password'] }}</span>

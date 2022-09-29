@@ -8,11 +8,15 @@ class StaticController extends Controller
 {
     public function index()
     {
-        return view('welcome');
+        return view('dashboard');
     }
 
     public function users()
     {
         return view('users');
+    }
+    public function dash()
+    {
+        return view('dash');
     }
 }

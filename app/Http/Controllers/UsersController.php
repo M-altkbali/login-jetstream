@@ -56,19 +56,19 @@ class UsersController extends Controller
 
         $request->validate([
             'user_fullname' => 'required',
-            'user_username' => 'required',
+            // 'user_username' => 'required',
             'user_pass' => 'required',
-            'user_pass_check' => 'required',
+            // 'user_pass_check' => 'required',
 
         ]);
 
         $user = new user();
         $user->name = strip_tags($request->input('user_fullname'));
-        $user->username = strip_tags($request->input('user_username'));
+        // $user->username = strip_tags($request->input('user_username'));
         $user->email = strip_tags($request->input('user_email'));
         $user->password = strip_tags($request->input('user_pass'));
-        $user->permission = strip_tags($request->input('user_per'));
-        $user->pic = strip_tags($request->input('user_pic'));
+        // $user->permission = strip_tags($request->input('user_per'));
+        // $user->pic = strip_tags($request->input('user_pic'));
 
         $user->save();
         return redirect()->route('users.index');

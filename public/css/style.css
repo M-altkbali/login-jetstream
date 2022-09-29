@@ -362,16 +362,16 @@ header nav ul li span {
   box-shadow: 0 2rem 3rem rgba(132, 139, 200, 0.18);
 }
 .form-create .fileInput {
-  width: 30%;
+  width: 100%;
 }
 .form-create .fileInput input[type=file] {
   background-color: #11101d;
   position: relative;
-  height: 8rem;
+  height: 10rem;
   border: 0px;
   box-shadow: 0 2rem 3rem rgba(132, 139, 200, 0.18);
   transition: all 0.3s;
-  border-radius: 5px 10px 10px 100px;
+  border-radius: 20px 30px 0px 70px;
 }
 .form-create .fileInput input[type=file]::after {
   content: "Select File";
@@ -393,15 +393,15 @@ header nav ul li span {
   color: #ffffff;
   transition: all 0.3s;
 }
-.form-create .email {
+.form-create .email, .form-create .name {
   width: 65%;
 }
 .form-create .save_button {
   width: 100%;
-  margin-top: -8px;
+  margin-top: 10px;
 }
 .form-create .save_button div {
-  margin: 0 18%;
+  margin: auto;
   display: flex;
   flex-direction: row;
   justify-content: space-between;

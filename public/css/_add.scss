@@ -20,15 +20,15 @@
         }
     }
     .fileInput {
-        width: 30%;
+        width: 100%;
         input[type="file"] {
             background-color: $dark-gray;
             position: relative;
-            height: 8rem;
+            height: 10rem;
             border: 0px;
             box-shadow: $box_shadow;
             transition: all 0.3s;
-            border-radius: 5px 10px 10px 100px;
+            border-radius: 20px 30px 0px 70px;
             &::after {
                 content: "Select File";
                 position: absolute;
@@ -51,16 +51,16 @@
             }
         }
     }
-    .email {
+    .email , .name{
         width: 65%;
         input[type="email"] {
         }
     }
     .save_button {
         width: 100%;
-        margin-top: -8px;
+        margin-top: 10px;
         div {
-            margin: 0 18%;
+            margin: auto;
             @include flexBetween(row);
             button {
                 padding: 1rem 2.2rem;

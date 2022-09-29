@@ -18,7 +18,7 @@ use App\Http\Controllers\UsersController;
 
 Route::get('/', [StaticController::class, 'index'])->name('home.index');
 
-// Route::get('/users', [StaticController::class, 'users'])->name('home.users');
+Route::get('dash', [StaticController::class , 'dash']);
 
 Route::resource('users', UsersController::class);
 
